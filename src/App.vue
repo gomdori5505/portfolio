@@ -1,32 +1,42 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-main>
+      <Hero />
+      <AboutMe />
+      <Skill />
+      <Project />
+      <Contact />
+    </v-main>
+
+    <v-footer
+      class="justify-center"
+      color="#292929"
+      height="100"
+    >
+      <div class="title font-weight-light grey--text text--lighten-1 text-center">
+        &copy; {{ (new Date()).getFullYear() }} — Vuetify, LLC — Made with 💜 by John Leider
+      </div>
+    </v-footer>
+  </v-app>
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import Hero from './components/Hero';
+import AboutMe from './components/AboutMe';
+import Skill from './components/Skill';
+import Project from './components/Project';
+import Contact from './components/Contact';
 
-#nav {
-  padding: 30px;
-}
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+export default {
+  name: 'App',
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
-</style>
+  components: {
+    Hero,
+    AboutMe,
+    Skill,
+    Project,
+    Contact,
+  }
+};
+</script>
