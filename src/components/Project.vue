@@ -16,7 +16,7 @@
 
           <v-row>
             <v-col
-              v-for="({ src, text, title }, i) in articles"
+              v-for="({ src, text, title, people, period, skills }, i) in articles"
               :key="i"
               cols="12"
               md="4"
@@ -29,7 +29,7 @@
               ></v-img>
 
               <h3
-                class="font-weight-black mb-4 text-uppercase"
+                class="font-weight-black mb-4"
                 v-text="title"
               ></h3>
 
@@ -38,12 +38,66 @@
                 v-text="text"
               ></div>
 
-              <v-btn
-                class="ml-n4 font-weight-black"
-                text
+              <div
+                class="subtitle font-weight-light mb-2"
               >
-                Continue Reading
-              </v-btn>
+                <v-icon
+                class="mr-1"
+                  color="black"
+                >
+                  mdi-account
+                </v-icon>
+              {{ people }}
+              </div>
+
+              <div
+                class="subtitle font-weight-light mb-2"
+              >
+                <v-icon
+                class="mr-1"
+                  color="black"
+                >
+                  mdi-calendar
+                </v-icon>
+              {{ period }}
+              </div>
+
+              <div
+                class="subtitle font-weight-light mb-2"
+              >
+                <v-icon
+                  class="mr-1"
+                  color="black"
+                >
+                  mdi-code-tags
+                </v-icon>
+                <span
+                  v-for="skill in skills"
+                  :key="skill"
+                  v-text="'#' + skill"
+                  class="mr-2"
+                ></span>
+              </div>
+              
+              <div>
+                <v-btn
+                  class="ml-n4 font-weight-black"
+                  text
+                  @click="goToLink(githubLink)"
+                >
+                  Github
+                </v-btn>
+              </div>
+              
+              <div>
+                <v-btn
+                  class="ml-n4 font-weight-black"
+                  text
+                  @click="goToLink(pageLink)"
+                >
+                  View page
+                </v-btn>
+              </div>
             </v-col>
           </v-row>
         </v-container>
@@ -61,6 +115,11 @@ export default {
                     src: 'https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
                     title: '포트폴리오 웹사이트',
                     text: 'VueJS로 개발한 포트폴리오 사이트 입니다.',
+                    people: '개인',
+                    period: '2021-01-02 ~ 2020-01-00 (0일)',
+                    skills: ['JavaScript', 'VueJS', 'Vuetify'],
+                    githubLink: 'https://github.com/gomdori5505/portfolio',
+                    pageLink: '#'
                 },
                 {
                     src: 'https://images.unsplash.com/photo-1475938476802-32a7e851dad1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
@@ -74,6 +133,11 @@ export default {
                 },
             ],
         }
-    }
+    },
+    methods: {
+      goToLink: link => {
+        window.open("https://github.com/gomdori5505/portfolio", "_blank");
+      }
+    },
 }
 </script>
