@@ -145,11 +145,6 @@ export default {
       ],
     }
   },
-  methods: {
-    goToLink: link => {
-      window.open("https://github.com/gomdori5505/portfolio", "_blank");
-    }
-  },
-  mixins: [dateFormat]
+  mixins: [link]
 }
 </script>
