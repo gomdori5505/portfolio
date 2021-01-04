@@ -27,7 +27,7 @@
             <v-card
               v-if="type === 'fontawesome'"
               class="py-5 px-4"
-              color="grey lighten-5"
+              color="grey lighten-3"
               flat
             >
               <v-theme-provider dark>
@@ -45,7 +45,7 @@
             <v-card
               v-else-if="type === 'mdi'"
               class="py-5 px-4"
-              color="grey lighten-5"
+              color="grey lighten-3"
               flat
             >
               <v-theme-provider dark>

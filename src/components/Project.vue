@@ -42,7 +42,7 @@
             class="subtitle font-weight-light mb-2"
           >
             <v-icon
-            class="mr-1"
+              class="mr-1"
               color="black"
             >
               mdi-account
@@ -117,30 +117,50 @@ export default {
           title: '포트폴리오 웹사이트',
           text: 'VueJS로 개발한 포트폴리오 사이트 입니다.',
           people: '개인',
-          period: '2021-01-02 ~ 2020-01-00 (0일)',
-          skills: ['JavaScript', 'VueJS', 'Vuetify'],
+          period: '2021-01-02 ~ 2021-01-04 (3일)',
+          skills: ['VueJS', 'Vuetify'],
           githubLink: 'https://github.com/gomdori5505/portfolio',
-          pageLink: '#'
+          pageLink: 'https://gomdori5505.github.io/portfolio/'
         },
         {
           src: 'https://images.unsplash.com/photo-1475938476802-32a7e851dad1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-          title: 'Think outside the box',
-          text: 'Nam ut leo ipsum. Maecenas pretium aliquam feugiat. Aenean vel tempor est, vitae tincidunt risus. Sed sodales vestibulum nibh.',
+          title: 'VueJS 게시판',
+          text: 'VueJS를 기반으로 Firebase(NoSQL)를 연동하여 데이터를 저장하고 뿌려주는 게시판 입니다.',
           people: '개인',
-          period: '2021-01-02 ~ 2020-01-00 (0일)',
-          skills: ['JavaScript', 'VueJS', 'Vuetify'],
-          githubLink: 'https://github.com/gomdori5505/portfolio',
-          pageLink: '#'
+          period: '2020-12-29 ~ 2020-12-31 (3일)',
+          skills: ['VueJS', 'Vuetify', 'Firebase'],
+          githubLink: 'https://github.com/gomdori5505/vuejs_board',
+          pageLink: 'https://gomdori5505.github.io/vuejs_board/'
         },
         {
           src: 'https://images.unsplash.com/photo-1416339442236-8ceb164046f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1892&q=80',
-          title: 'Small changes, big difference',
-          text: 'Vestibulum in dictum velit, in rhoncus nibh. Maecenas neque libero, interdum a dignissim in, aliquet vitae lectus. Phasellus lorem enim, luctus ut velit eget.',
+          title: 'Javascript 게시판',
+          text: 'Javascript를 기반으로 Firebase(NoSQL)를 연동하여 rest api를 통해 데이터를 저장하고 뿌려주는 게시판 입니다.',
           people: '개인',
-          period: '2021-01-02 ~ 2020-01-00 (0일)',
-          skills: ['JavaScript', 'VueJS', 'Vuetify'],
-          githubLink: 'https://github.com/gomdori5505/portfolio',
-          pageLink: '#'
+          period: '2020-12-21 ~ 2020-12-24 (4일)',
+          skills: ['JavaScript', 'Firebase'],
+          githubLink: 'https://github.com/gomdori5505/JS_board',
+          pageLink: 'https://gomdori5505.github.io/JS_board/index.html'
+        },
+        {
+          src: 'https://images.unsplash.com/photo-1416339442236-8ceb164046f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1892&q=80',
+          title: 'Movie Box',
+          text: 'Javascript를 기반으로 박스오피스API를 활용하여 local storage에 영화를 담을 수 있는 Movie Box 입니다.',
+          people: '개인',
+          period: '2020-12-07 ~ 2020-12-10 (4일)',
+          skills: ['JavaScript'],
+          githubLink: 'https://github.com/gomdori5505/js_project',
+          pageLink: 'https://gomdori5505.github.io/js_project/movie_box/'
+        },
+        {
+          src: 'https://images.unsplash.com/photo-1416339442236-8ceb164046f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1892&q=80',
+          title: 'TODO List',
+          text: 'Javascript를 기반으로 local storage에서 데이터를 저장하고 뿌려주는 TODO List 입니다.',
+          people: '개인',
+          period: '2020-12-01 ~ 2020-12-03 (4일)',
+          skills: ['JavaScript'],
+          githubLink: 'https://github.com/gomdori5505/js_project',
+          pageLink: 'https://gomdori5505.github.io/js_project/todo_list/'
         },
       ],
     }
