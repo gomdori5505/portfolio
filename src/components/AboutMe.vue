@@ -26,7 +26,7 @@
         </v-responsive>
         <v-btn
           color="grey"
-          href="https://vuetifyjs.com"
+          @click="goToLink(pageLink)"
           outlined
           large
         >
@@ -38,3 +38,15 @@
     <div class="py-12"></div>
   </section>
 </template>
+
+<script>
+import { link } from '@/mixins/link'
+export default {
+  data() {
+    return {
+      pageLink: "#"
+    }
+  },
+  mixins: [link]
+}
+</script>
