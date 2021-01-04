@@ -44,7 +44,7 @@ import { link } from '@/mixins/link'
 export default {
   data() {
     return {
-      pageLink: "https://drive.google.com/file/d/1k0GG-ER8itG1pc_7piKuo4WR3pnjqdm1/view?usp=sharing"
+      pageLink: "https://drive.google.com/file/d/15ewKc0MxH0xSKgS692P8Rc11dvrrIAhf/view?usp=sharing"
     }
   },
   mixins: [link]
