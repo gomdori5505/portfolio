@@ -1,6 +1,6 @@
 <template>
-<section id="project">
-  <div class="py-12"></div>
+  <section id="project">
+    <div class="py-12"></div>
 
     <v-container>
       <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">Project</h2>
@@ -54,7 +54,7 @@
             class="subtitle font-weight-light mb-2"
           >
             <v-icon
-            class="mr-1"
+              class="mr-1"
               color="black"
             >
               mdi-calendar

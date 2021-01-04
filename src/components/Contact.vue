@@ -1,5 +1,5 @@
 <template>
-<v-sheet
+  <v-sheet
     id="contact"
     color="#333333"
     dark
@@ -20,7 +20,29 @@
         <v-divider></v-divider>
       </v-responsive>
       <v-row>
-        <v-col>aa</v-col>
+        <v-col>
+          <div
+            class="title font-weight-light mb-5"
+            v-for="({type, mdi, text}, i) in articles"
+            :key="i"
+          >
+            <v-icon
+              class="mr-7"
+              color="white"
+              size="50"
+            >
+              {{ mdi }}
+            </v-icon>
+            <span v-if="type === 'text'">{{ text }}</span>
+            <span
+              v-else
+              @click="goToLink(text)"
+              style="cursor: pointer;"
+            >
+              {{ text }}
+            </span>
+          </div>
+        </v-col>
         <v-col>
           <v-theme-provider light>
             <v-form @submit.prevent="submit">
@@ -93,6 +115,7 @@
 <script>
 import emailjs from 'emailjs-com';
 import { required, maxLength, email } from 'vuelidate/lib/validators'
+import { link } from '@/mixins/link'
 
 export default {
   validations: {
@@ -107,7 +130,24 @@ export default {
     message: '',
     serviceId: 'service_3mlzt69',
     templateId: 'template_ch82n08',
-    userId: 'user_HikCziUGITuc0gljgBzeW'
+    userId: 'user_HikCziUGITuc0gljgBzeW',
+    articles: [
+      {
+        type: 'text',
+        mdi: 'mdi-email-outline',
+        text: 'gomdori5505@gmail.com'
+      },
+      {
+        type: 'text',
+        mdi: 'mdi-phone',
+        text: '010-4592-3350'
+      },
+      {
+        type: 'link',
+        mdi: 'mdi-github',
+        text: 'https://github.com/gomdori5505'
+      }
+    ]
   }),
 
   computed: {
@@ -162,5 +202,6 @@ export default {
         });
     }
   },
+  mixins: [link]
 }
 </script>
