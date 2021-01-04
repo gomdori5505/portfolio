@@ -1,5 +1,8 @@
 # portfolio
 
+## Deploy to github page
+https://gomdori5505.github.io/portfolio/
+
 ## Project setup
 ```
 npm install
