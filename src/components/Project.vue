@@ -113,7 +113,7 @@ export default {
     return {
       articles: [
         {
-          src: 'https://images.unsplash.com/photo-1423784346385-c1d4dac9893a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+          src: require('@/assets/projectGif/portfolio.gif'),
           title: '포트폴리오 웹사이트',
           text: 'VueJS로 개발한 포트폴리오 사이트 입니다.',
           people: '개인',
@@ -123,7 +123,7 @@ export default {
           pageLink: 'https://gomdori5505.github.io/portfolio/'
         },
         {
-          src: 'https://images.unsplash.com/photo-1475938476802-32a7e851dad1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+          src: require('@/assets/projectGif/vueJsBoard.gif'),
           title: 'VueJS 게시판',
           text: 'VueJS를 기반으로 Firebase(NoSQL)를 연동하여 데이터를 저장하고 뿌려주는 게시판 입니다.',
           people: '개인',
@@ -133,17 +133,17 @@ export default {
           pageLink: 'https://gomdori5505.github.io/vuejs_board/'
         },
         {
-          src: 'https://images.unsplash.com/photo-1416339442236-8ceb164046f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1892&q=80',
+          src: require('@/assets/projectGif/jsBoard.gif'),
           title: 'Javascript 게시판',
           text: 'Javascript를 기반으로 Firebase(NoSQL)를 연동하여 rest api를 통해 데이터를 저장하고 뿌려주는 게시판 입니다.',
           people: '개인',
           period: '2020-12-21 ~ 2020-12-24 (4일)',
           skills: ['JavaScript', 'Firebase'],
           githubLink: 'https://github.com/gomdori5505/JS_board',
-          pageLink: 'https://gomdori5505.github.io/JS_board/index.html'
+          pageLink: 'https://gomdori5505.github.io/JS_board/'
         },
         {
-          src: 'https://images.unsplash.com/photo-1416339442236-8ceb164046f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1892&q=80',
+          src: require('@/assets/projectGif/movieBox.gif'),
           title: 'Movie Box',
           text: 'Javascript를 기반으로 박스오피스API를 활용하여 local storage에 영화를 담을 수 있는 Movie Box 입니다.',
           people: '개인',
@@ -153,7 +153,7 @@ export default {
           pageLink: 'https://gomdori5505.github.io/js_project/movie_box/'
         },
         {
-          src: 'https://images.unsplash.com/photo-1416339442236-8ceb164046f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1892&q=80',
+          src: require('@/assets/projectGif/todoList.gif'),
           title: 'TODO List',
           text: 'Javascript를 기반으로 local storage에서 데이터를 저장하고 뿌려주는 TODO List 입니다.',
           people: '개인',
