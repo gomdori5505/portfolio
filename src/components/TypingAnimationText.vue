@@ -1,6 +1,6 @@
 <template>
   <div>
-    <span :style="{ color: propsColor, fontSize: propsFontSize }" v-for="text in typingTexts" :key="text.id">{{text}}</span>
+    <span :style="{ color: propsColor }" v-for="text in typingTexts" :key="text.id">{{text}}</span>
   </div>
 </template>
 

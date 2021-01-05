@@ -24,7 +24,7 @@
                   <typing-animation 
                     :typingText="['소통을 중요시 하는', '배움을 두려워하지 않는', '항상 긍정적으로 생각하는', '서로 협력하며 일하는것을 좋아하는']"
                     :props-color="'white'"
-                    :props-font-size="'50px'"
+                    
                     :props-cursor-color="'white'"
                     :props-cursor-width="'4px'"
                     :props-cursor-height="'45px'"
