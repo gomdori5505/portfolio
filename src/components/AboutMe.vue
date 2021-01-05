@@ -12,7 +12,7 @@
         </v-responsive>
 
         <v-responsive
-          class="mx-auto title font-weight-light mb-8"
+          class="mx-auto title font-weight-light mb-10"
           max-width="720"
         >
           다시 도전하는 Front-End 개발자 이승경 입니다.<br>
@@ -24,6 +24,16 @@
           사용자로부터 서비스 경험에 대한 긍정적인 부분까지<br>
           이끌어낼 수 있도록 하는 개발자를 지향합니다.
         </v-responsive>
+        <div class="text-center mb-10">
+          <v-avatar
+            size="190"
+          >
+            <img
+              src="@/assets/img/lsk.jpg"
+              alt="lsk"
+            >
+          </v-avatar>
+        </div>
         <v-btn
           color="grey"
           @click="goToLink(pageLink)"
