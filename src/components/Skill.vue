@@ -92,12 +92,6 @@ export default {
         {
           type: 'fontawesome',
           prefix: 'fab',
-          icon: 'sass',
-          title: 'SASS',
-        },
-        {
-          type: 'fontawesome',
-          prefix: 'fab',
           icon: 'bootstrap',
           title: 'Bootstrap',
         },
