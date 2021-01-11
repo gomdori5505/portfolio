@@ -146,6 +146,11 @@ export default {
         type: 'link',
         mdi: 'mdi-github',
         text: 'https://github.com/gomdori5505'
+      },
+      {
+        type: 'link',
+        mdi: 'mdi-blogger',
+        text: 'https://velog.io/@gomdori5505'
       }
     ]
   }),

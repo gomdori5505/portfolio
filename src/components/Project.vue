@@ -113,6 +113,16 @@ export default {
     return {
       articles: [
         {
+          src: require('@/assets/projectGif/ev-charging.png'),
+          title: '전기차 충전소 찾기',
+          text: 'VueJS 기반으로 전기차 충전소 공공 데이터를 받아와 다음 맵에 뿌려주고 상세정보를 보여주는 사이트 입니다. (미완성, 로그인, 즐겨찾기 및 게시판 추가 예정)',
+          people: '개인',
+          period: '2021-01-08 ~ 진행중',
+          skills: ['VueJS', 'Vuetify', 'Firebase'],
+          githubLink: 'https://github.com/gomdori5505/ev-charging',
+          pageLink: ''
+        },
+        {
           src: require('@/assets/projectGif/portfolio.gif'),
           title: '포트폴리오 웹사이트',
           text: 'VueJS로 개발한 포트폴리오 사이트 입니다.',
