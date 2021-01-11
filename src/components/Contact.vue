@@ -29,7 +29,7 @@
             <v-icon
               class="mr-7"
               color="white"
-              size="50"
+              style="font-size: 50px;"
             >
               {{ mdi }}
             </v-icon>
@@ -149,7 +149,7 @@ export default {
       },
       {
         type: 'link',
-        mdi: 'mdi-blogger',
+        mdi: '$vuetify.icons.custom',
         text: 'https://velog.io/@gomdori5505'
       }
     ]
