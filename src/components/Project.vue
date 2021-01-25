@@ -35,7 +35,7 @@
 
           <div
             class="title font-weight-light mb-5"
-            v-text="text"
+            v-html="text"
           ></div>
 
           <div
@@ -115,12 +115,12 @@ export default {
         {
           src: require('@/assets/projectGif/ev-charging.png'),
           title: '전기차 충전소 찾기',
-          text: 'VueJS 기반으로 전기차 충전소 공공 데이터를 받아와 다음 맵에 뿌려주고 상세정보를 보여주는 사이트 입니다. (미완성, 로그인, 즐겨찾기 및 게시판 추가 예정)',
+          text: 'VueJS 기반으로 전기차 충전소 공공 데이터를 받아와 다음 맵에 뿌려주고 상세정보를 보여주는 사이트 입니다. 로그인, 회원가입, 프로필 수정, 즐겨찾기, 충전소 상세정보 기능을 제공합니다. (현재 cors 이슈로 인해 <a target="_blank" href="https://chrome.google.com/webstore/detail/allow-cors-access-control/lhobafahddgcelffkeicbaginigeejlf?utm_source=chrome-ntp-icon">크롬 플러그인</a> 설치 필요, 차후 개선 예정)',
           people: '개인',
-          period: '2021-01-08 ~ 진행중',
+          period: '2021-01-08 ~ 2021-01-20 (12일)',
           skills: ['VueJS', 'Vuetify', 'Firebase'],
           githubLink: 'https://github.com/gomdori5505/ev-charging',
-          pageLink: ''
+          pageLink: 'http://125.129.216.119:8086/'
         },
         {
           src: require('@/assets/projectGif/portfolio.gif'),
